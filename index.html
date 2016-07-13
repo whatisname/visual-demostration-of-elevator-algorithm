@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="baidu.com.jquery.js"></script>
+        <script type="text/javascript" src="support.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <h2>电梯调度算法示例</h2>
+        <input type="button" value="1楼" onclick="javascript:choseFloor(1)">
+        <input type="button" value="2楼" onclick="javascript:choseFloor(2)">
+        <input type="button" value="3楼" onclick="javascript:choseFloor(3)">
+        <input type="button" value="4楼" onclick="javascript:choseFloor(4)">
+        <input type="button" value="5楼" onclick="javascript:choseFloor(5)">
+        <input type="button" value="6楼" onclick="javascript:choseFloor(6)">
+        <input type="button" value="7楼" onclick="javascript:choseFloor(7)">
+        <input type="button" value="8楼" onclick="javascript:choseFloor(8)">
+        <input type="button" value="9楼" onclick="javascript:choseFloor(9)">
+        <div id="elevator">
+            <table>
+                <tr>
+                    <td>电梯当前楼层</td>
+                    <td><input id="position" type="text" value="" disabled></td>
+                </tr>
+                <tr>
+                    <td>电梯当前方向</td>
+                    <td><input id="direction" type="text" value="" disabled></td>
+                </tr>
+
+				<tr>
+                    <td colspan="2">
+                    	<div class="floor-container">
+                    		<div class="floors">
+                    			<div class="floor" style="border-left:1px solid #eee;">1层</div>
+                    			<div class="floor">2层</div>
+                    			<div class="floor">3层</div>
+                    			<div class="floor">4层</div>
+                    			<div class="floor">5层</div>
+                    			<div class="floor">6层</div>
+                    			<div class="floor">7层</div>
+                    			<div class="floor">8层</div>
+                    			<div class="floor">9层</div>
+                    		</div>
+                    		<div id="elevator-item">电梯</div>
+                    	</div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                    	用户按下按钮情况
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan="2"><div id="user-info"></div></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    	电梯运动信息日志
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan="2"><div id="elevatr-info"></div></td>
+                </tr>
+				<!-- =========================================================== -->
+                <tr>
+                    <td colspan="2">
+                    	错误信息：
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan="2"><div id="error-info"></div></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

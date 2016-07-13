@@ -1,0 +1,64 @@
+
+/* css file
+*  author: 
+*
+*
+*
+**/
+
+body{
+	margin: 0;
+	padding-top: 0;
+}
+
+table tr td{
+	margin: 0;
+	padding: 0 10px;
+	/*border: 1px solid #ccc;*/
+}
+
+.floor-container{
+	position: relative;
+	border:1px solid #ccc;
+
+	width: 450px;
+	height: 45px;
+
+	margin: 10px 0;
+}
+
+.floor-container .floors{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 450px;
+	height: 20px;
+	background: #eee;
+}
+
+.floor-container .floors .floor{
+	float: left;
+	width: 49px;
+	height: 100%;
+
+	font-size: 15px;
+	text-align: center;
+
+	border-left: 1px solid #ccc; 
+}
+
+.floor-container #elevator-item{
+	position: absolute;
+	top: 23px;
+	left: 0px;
+
+	width: 50px;
+	height: 20px;
+
+	background: #333;
+
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+}
